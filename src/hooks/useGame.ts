@@ -2,9 +2,10 @@ import { Text } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import ApiClient from "../services/api-client.ts";
 
-interface Game {
+export interface Game {
   id: number;
   name: string;
+  backgroun_image: string;
 }
 interface FetchGamesResponse {
   count: number;
