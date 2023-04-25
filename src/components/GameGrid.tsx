@@ -10,7 +10,7 @@ interface Props {
 const GameGrid = ({ selectedGenre }: Props) => {
   const { data, error, isLoading } = useGames(selectedGenre);
   const skeletons = [1, 2, 4, 5, 6];
-  console.log(isLoading);
+
   return (
     <>
       {error && <Text>{error}</Text>}
