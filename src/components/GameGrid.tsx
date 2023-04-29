@@ -3,7 +3,7 @@ import useGames from "../hooks/useGame.ts";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
-import { Platform } from "../hooks/usePlatforms";
+
 import { GameQuery } from "../App";
 
 interface Props {
@@ -14,6 +14,7 @@ const GameGrid = ({ gameQuery }: Props) => {
   const skeletons = [1, 2, 4, 5, 6];
 
   if (error) return <Text>{error}</Text>;
+
   return (
     <>
       <SimpleGrid

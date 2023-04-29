@@ -3,7 +3,6 @@ import {
   ListItem,
   HStack,
   Image,
-  Text,
   Spinner,
   Button,
 } from "@chakra-ui/react";
@@ -14,7 +13,7 @@ import { Heading } from "@chakra-ui/react";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
-  selectGenre: Genre | null;
+  selectedGenre: Genre | null;
 }
 
 const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
